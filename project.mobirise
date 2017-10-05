@@ -1,0 +1,403 @@
+{
+  "settings": {
+    "name": "Site-10-03_2017",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Lora",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#545454"
+      ]
+    },
+    "versionFirst": "4.3.0",
+    "uniqCompNum": 24,
+    "versionPublish": "4.3.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-figure": {
+              "margin": "0 auto"
+            }
+          },
+          "_name": "header4",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"50\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"media-content col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    INTRO WITH IMAGE\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-text align-center mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                        Intro with background image, color overlay and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.\n                    </p>\n                </div>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        \n            <div class=\"mbr-figure pt-5\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/rect5359-1373x538.png\" alt=\"Mobirise\" title>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qx18WSrwsH",
+          "_anchor": "header4-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-black-outline\" href=\"https://www.dropbox.com/s/lz6ge2jlut4nqcg/Huvudr%C3%A4tt.pdf?dl=0\" target=\"_blank\">&nbsp; &nbsp; &nbsp;Meny &nbsp; &nbsp; &nbsp;</a>\n                    <a class=\"btn btn-black-outline\" href=\"index.html#content4-c\">&nbsp; Vår Historia &nbsp;</a> <a class=\"btn btn-black-outline\" href=\"#bottom\">&nbsp; &nbsp; &nbsp; Adress &nbsp; &nbsp;&nbsp;</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qx1fr2ebcO",
+          "_anchor": "content8-e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            "H2": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Välkommen till det moderna vietnamesiska köket</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\">På Restaurang THÚY. Här serverar vi genuint traditionella vietnamesiska maträtter som t.ex. phở (vietnamesiska ris nudelsoppa), cá kho (karamelliserad fisk), bánh ướt (\"wet cakes\") till franskinspirerad bò lúc lắc och kinesiskt inspirerad wonton soppa. <br><br>På restaurang THÚY, kombinerar vi smakrika och hälsosamma vietnamesiska kryddväxter och matlagningskonst med det moderna köket vad det gäller användningen av råvarorna. Här använder vi högkvalitativ, närproducerade och ekologiska råvarorna i stor utsträckningen, för att ge den bästa smakupplevelsen till våra gäster. <br><br> Att laga god vietnamesiska mat kräver mycket mer än kryddor och råvaror. För att kunna göra det måste det finnas en balans mellan bl.a. kryddor och råvaror. Men hur lyckas man? Låt oss lämna över arbetet till en person som förr i tiden var en fattig 15 årig flicka som vi ska berätta om lite senare. &nbsp; &nbsp;&nbsp;</h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content4-h",
+          "_cid": "qx1gZhpqb1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background": "@bgColor",
+            ".images-container.container-fluid": {
+              "padding": "0"
+            },
+            ".media-container-row": {
+              "margin": "0 auto",
+              "align-items": "stretch",
+              ".img-item": {
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "center",
+                "position": "relative",
+                "width": "100%",
+                "z-index": "1",
+                "img": {
+                  "width": "100%"
+                },
+                ".img-caption": {
+                  "background": "@cpBg",
+                  "z-index": "2",
+                  "padding": "1rem 1rem",
+                  "word-break": "break-word",
+                  "p": {
+                    "margin-bottom": "0"
+                  }
+                },
+                "&.item1": {
+                  "padding": "0 2rem 0 0"
+                }
+              },
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".img-item": {
+                "width": "100% !important",
+                "&.item1": {
+                  "width": "100%",
+                  "flex-basis": "initial !important",
+                  "padding": "0 0 2rem 0 !important"
+                }
+              }
+            }
+          },
+          "_name": "image4",
+          "_customHTML": "<section group=\"Images & Videos\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"66\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Sizes\" name=\"proportions\" min=\"30\" max=\"300\" value=\"184\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\">\n        <input type=\"color\" title=\"Caption Background\" name=\"cpBg\" value=\"#ffffff\" condition=\"showCaption\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <div class=\"container images-container\" mbr-class=\"{'container-fluid':fullWidth,container:fullWidth==false}\">\n            <div class=\"media-container-row\" mbr-style=\"{'width':contentWidth+'%'}\">\n                <div class=\"img-item item1\" mbr-style=\"{'width':proportions+'%'}\">\n                    <img src=\"@PROJECT_PATH@/assets/images/5-2592x1936.png\" alt title>\n                    <div class=\"img-caption\" mbr-if=\"showCaption\">\n                        <p class=\"mbr-fonts-style align-center mbr-black\" mbr-theme-style=\"display-7\">\n                            Responsive\n                        </p>\n                    </div>\n                </div>\n                <div class=\"img-item\">\n                    <img src=\"@PROJECT_PATH@/assets/images/2-960x1280.png\" alt title>\n                    <div class=\"img-caption\" mbr-if=\"showCaption\">\n                        <p class=\"mbr-fonts-style align-center mbr-black\" mbr-theme-style=\"display-7\">\n                            Mobile friendly\n                        </p>\n                    </div>\n                </div>\n            </div>\n    </div>\n</section>",
+          "_cid": "qx1hqSrpbH",
+          "_anchor": "image4-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            "H2": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    Historia</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">THÚY - Det moderna vietnamesiska köket&nbsp;</h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qx1f0zQJhz",
+          "_anchor": "content4-c",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "4rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mbr-figure": {
+                "padding-bottom": "1rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"90\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/yeee-903x872.png\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Det började för snart 35 år sen. Då en 15 årig flicka från Mekongdeltat i Vietnam som åkte tillsammans med sin storasyster till Saigon i södra Vietnam för att starta en gaturestaurang.  Syskonens startkapital räckte till att köpa råvarorna till en handfull gäster. Deras gäster var xichlo (cykeltaxi i Vietnam) förare och fattiga fabriksarbetare. De sökte sig till syskonens restaurang för att få en måltid som passade till deras plånböcker.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qx1eVIsZuR",
+          "_anchor": "content6-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-left": "4rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mbr-figure": {
+                "padding-top": "1rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "left"
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"mbr-section content7\" group=\"Article\">\n          \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->   \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"105\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text align-right mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Med glädje i arbetet för gästerna och känslan för god mat, blev syskonens gaturestaurang så småningom ett välbesökt ställe även för många välavlönade personer i trakten. <br><br>   Snart 35 år senare är matlagningen fortfarande en passion för Thuy, och känslan för sina kunder är lika stark hos Thuy som det var då. Med vietnamesiska kryddor och högkvalitativa råvaror, har Thuy omvandlat det som en gång i tiden var gatumat till en högklassig måltid. <br> \n<br> Du är varmt välkommen till en smaklig måltid på Restaurang THÚY!&nbsp;</p>\n                        </div>\n                    </div>\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                     <img src=\"@PROJECT_PATH@/assets/images/unstitled-1105x720.png\" alt=\"Mobirise\" title>  \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qx1iYe7D0K",
+          "_anchor": "content7-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            "H2": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    Vietnam och matkultur</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">THÚY - Det moderna vietnamesiska köket&nbsp;</h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content4-l",
+          "_cid": "qx1jnnLGPf",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "4rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mbr-figure": {
+                "padding-bottom": "1rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"90\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/test-1113x876.png\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Geografiskt ligger Vietnam i tropisk regionen nära ekvatorn i Asien. Det är ett smal och avlångt land med 160 mil från syd till nord, ungefär lika lång som Sverige. Matkulturen i Vietnam kan indelas i 3 regioner. Generellt, maten i norra Vietnam är mer salt, i centrala Vietnam är den mer kryddstark och i södra Vietnam har maten mer söta och krämiga ingredienser. <br><br>  Historiskt sett är Vietnam ett land som har varit en kinesisk och fransk koloni i många år. Därför, av naturliga skäl, finns det en del maträtter som är influerade av båda länderna. Men alla vietnamesiska maträtter har ett gemensamt drag. Det är den flitiga användningen av nước mắm (fisksås), lime och grönsaker i maten.  \n<br><br>Ett  annat kännetecken av vietnamesiska maten är att den är snabbt stekt men inte fet som kinesisk mat. Den är kryddig men inte stark som thaimat. För varje vietnamesisk maträtt, finns det ofta en liten skål dippsås av nước mắm, soja eller fermenterad räksås vid sidan om så att man själv kan bestämma smaken på sin mat. <br><br>     De traditionella vietnamesiska maträtter t.ex. phở, cá kho,  thịt kho, bánh ướt och bún bò huế är genuin vietnamesiska och  tidlösa.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content6-k",
+          "_cid": "qx1jcZru51",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".content": {
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "> div:not(:last-child)": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            ".map": {
+              "height": "18.75rem"
+            },
+            ".footer-lower": {
+              ".copyright": {
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "1rem",
+                  "text-align": "center"
+                }
+              },
+              "hr": {
+                "margin": "1rem 0",
+                "border-color": "#fff",
+                "opacity": ".05"
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                "-webkit-justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.3rem",
+                  "color": "#fff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "justify-content": "center",
+                  "-webkit-justify-content": "center"
+                }
+              }
+            },
+            ".google-map": {
+              "height": "25rem",
+              "position": "relative",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "font-family": "Montserrat",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                },
+                "&::after": {}
+              }
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"ChIJfaWP3dqXU0YRelBksKMtCAc\" value=\"Klostergatan 12\n222 22 LUND\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\">\n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#545454\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content mbr-white\">\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <p class=\"mbr-text\">\n                    <strong>Adress</strong>\n                    <br>\n                    <br>Klostergatan 12<br>222 22 LUND<br><br><b>Öppettider</b><br>\n                    <br>Mån-Fre:&nbsp;<br>11.00 - 17.00, 15.00 - 20.30\n<br>                   <br>Lörd:&nbsp;<br>        13.00 - 20.30\n<br>                   <br>Sönd: Stängt.<br></p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <p class=\"mbr-text\"><b>Kontakta oss</b><br>\n                    <br>Tel: 046-94888</p>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\">\n                        © Copyright 2017 Mobirise - All Rights Reserved\n                    </p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qx1kt4s8hS",
+          "_anchor": "footer2-n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
